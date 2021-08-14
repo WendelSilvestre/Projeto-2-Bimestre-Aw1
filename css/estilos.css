@@ -23,7 +23,7 @@ body{}
     display: none;
 }
 
-/* HEADER */
+/* HEADER FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 header{
     padding: 22px 0;
     border-bottom: 2px solid #DBDBDB;
@@ -60,32 +60,15 @@ header .pesquisar{
   margin-right: 5px;
 }
 
+/*MENU LATERAL-> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 #menu {
   float: left;
   width: 22%;
 }
 
-ul {
-    list-style-type: none;
-  border-right: 1px solid #CCC;
-}
-
-a {
+.menu a {
     text-decoration: none;
 }
-
-h1 {
-     color: #FFF;
-     font-size: 24px;
-     font-weight: 400;
-     text-align: center;
-     margin-top: 80px;
- }
-
-h1 a {
-     color: #c12c42;
-     font-size: 16px;
- }
 
  .accordion {
      width: 100%;
@@ -95,7 +78,8 @@ h1 a {
      -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
      border-radius: 4px;
-  margin-top: -1px;
+     margin-top: -1px;
+     border-right: 1px solid #CCC;
  }
 
 .accordion .link {
