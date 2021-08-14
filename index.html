@@ -13,12 +13,17 @@
   </head>
   <body>
 
-     <!--Cabeçalho do site feito por Wendel De Oliveira Silvestre-->
-    <header>
+  <!--Cabeçalho do site feito por Wendel De Oliveira Silvestre-->
+  <header>
+    <!--Div container de todo conteudo do cabeçalho -->
       <div class="container">
+        <!--Div que tem todas as linhas-->
           <div class="linha">
+              <!--Div do conteudo que está a esquerda -->
               <div class="linha_esquerda">
+                      <!--Lista que fica em cima em formato horizontal-->
                       <ul>
+                          <!--Li de cada elemento -->
                           <li style="margin-right: 100px;">
                             <figure>
                               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Metr%C3%B4-SP_logo.svg/1200px-Metr%C3%B4-SP_logo.svg.png" alt="<!--!>">
@@ -40,14 +45,17 @@
                               <a href="#">Pesquisa OD</a>
                           </li>
                       </ul>
+              <!--Final da Div do conteudo que fica a esquerda -->
               </div>
 
+              <!--Conteúdo do meio -->
               <div class="linha_meio">
                 <input type="text" class="pesquisar" id="nome"/>
               </div>
 
-
+              <!--Div do conteúdo que fica a direita -->
               <div class="linha_direita">
+                <!--Lista que fica em cima em formato horizontal-->
                 <ul>
                     <li>
                         <a href="http://www.facebook.com/metrosp"><i class="fab fa-facebook-square"></i>  </a>
@@ -63,9 +71,10 @@
                     </li>
                 </ul>
               </div>
+          <!--Final das Div das linhas -->
           </div>
+      <!--Final da Div do conteúdo que fica em cima -->
       </div>
-      <!--Menu principal-->
       <nav></nav>
     </header>
 
@@ -73,21 +82,26 @@
     <!--Menu lateral feito por Wendel De Oliveira Silvestre-->
     <aside>
       <!--Não tinha capacidade de fazer isso então pesquisei desculpa-->
-    	<div id="menu">
+      <div id="menu">
+        <!--Abertura de toda a lista do menu lateral-->
         <ul id="accordion" class="accordion">
-      		<li>
-      			<div class="link"><i class="fas fa-home"></i>Home<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
-      				<li><a href="#">Photoshop</a></li>
-      			</ul>
-      		</li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-industry"></i>Empresa<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
-      				<li><a href="#">Institucional</a></li>
-      				<li><a href="#">Comunicações da Lei das S/A</a></li>
-      				<li><a href="#">Portal Governança</a></li>
-      				<li><a href="#">50 anos de Fundação</a></li>
+            <div class="link"><i class="fas fa-home"></i>Home<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
+              <li><a href="#">Photoshop</a></li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
+          <li>
+            <div class="link"><i class="fas fa-industry"></i>Empresa<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
+              <li><a href="#">Institucional</a></li>
+              <li><a href="#">Comunicações da Lei das S/A</a></li>
+              <li><a href="#">Portal Governança</a></li>
+              <li><a href="#">50 anos de Fundação</a></li>
               <li><a href="#">Estação Memória</a></li>
               <li><a href="#">Sustentabilidade</a></li>
               <li><a href="#">Licenciamento Ambiental</a></li>
@@ -100,15 +114,17 @@
               <li><a href="#">Metrô Social</a></li>
               <li><a href="#">Procedimento para afixação de cartazes no Metrô de São Paulo</a></li>
               <li><a href="#">Procedimento para uso da marca Metrô e realização de fotos e filmagens</a></li>
-      			</ul>
-      		</li>
-      		<li>
-      		  <div class="link"><i class="fas fa-subway"></i>Sua viagem<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
-      				<li><a href="#">Direto Metrô</a></li>
-      				<li><a href="#">Guia do Passageiro</a></li>
-      				<li><a href="#">Para onde você vai?</a></li>
-      				<li><a href="#">Mapa da Rede</a></li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
+          <li>
+            <div class="link"><i class="fas fa-subway"></i>Sua viagem<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
+              <li><a href="#">Direto Metrô</a></li>
+              <li><a href="#">Guia do Passageiro</a></li>
+              <li><a href="#">Para onde você vai?</a></li>
+              <li><a href="#">Mapa da Rede</a></li>
               <li><a href="#">Metrô: melhor opção para conhecer São Paulo</a></li>
               <li><a href="#">Linhas e estações</a></li>
               <li><a href="#">Estacionamentos</a></li>
@@ -123,82 +139,95 @@
               <li><a href="#">Horários</a></li>
               <li><a href="#">Transporte de Animais Domésticos</a></li>
               <li><a href="#">Terminais Rodoviários</a></li>
-      			</ul>
-      		</li>
-      		<li><div class="link"><i class="fa fa-globe"></i>Notícias<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
-      				<li><a href="#">Obras para expansão da Linha 2-Verde alteram trânsito na rua São Serafim a partir da próxima segunda-feira, 16</a></li>
-      				<li><a href="#">Obras para expansão da Linha 2- Verde modificam tráfego na Vila Prudente</a></li>
-      				<li><a href="#">Estação Tatuapé do Metrô terá distribuição de testes para diagnóstico do HIV</a></li>
-      				<li><a href="#">Últimas notícias</a></li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
+          <li><div class="link"><i class="fa fa-globe"></i>Notícias<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
+              <li><a href="#">Obras para expansão da Linha 2-Verde alteram trânsito na rua São Serafim a partir da próxima segunda-feira, 16</a></li>
+              <li><a href="#">Obras para expansão da Linha 2- Verde modificam tráfego na Vila Prudente</a></li>
+              <li><a href="#">Estação Tatuapé do Metrô terá distribuição de testes para diagnóstico do HIV</a></li>
+              <li><a href="#">Últimas notícias</a></li>
               <li><a href="#">Cadastre-se</a></li>
-      			</ul>
-      		</li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-paint-brush"></i>Cultura<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
-      				<li><a href="#">Linha da Cultura</a></li>
-      				<li><a href="#">Cadastro de Projetos</a></li>
-      				<li><a href="#">Bibliotecas</a></li>
-      				<li><a href="#">Arte no Metrô</a></li>
+            <div class="link"><i class="fas fa-paint-brush"></i>Cultura<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
+              <li><a href="#">Linha da Cultura</a></li>
+              <li><a href="#">Cadastro de Projetos</a></li>
+              <li><a href="#">Bibliotecas</a></li>
+              <li><a href="#">Arte no Metrô</a></li>
               <li><a href="#">Poesia no Metrô</a></li>
               <li><a href="#">Google Arts and Culture</a></li>
-      			</ul>
-      		</li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-mobile-alt"></i>Tecnologia<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
+            <div class="link"><i class="fas fa-mobile-alt"></i>Tecnologia<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
               <li><a href="#">Manutenção</a></li>
-      				<li><a href="#">Operação</a></li>
-      				<li><a href="#">Sistemas</a></li>
-      				<li><a href="#">Construção</a></li>
+              <li><a href="#">Operação</a></li>
+              <li><a href="#">Sistemas</a></li>
+              <li><a href="#">Construção</a></li>
               <li><a href="#">Arquitetura</a></li>
               <li><a href="#">Evolução tecnológica nos trens</a></li>
               <li><a href="#">Artigos e Publicações</a></li>
               <li><a href="#">Trens e Frota</a></li>
               <li><a href="#">Informação Portal da Transparência</a></li>
-      			</ul>
-      		</li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-wrench"></i>Expansão e Obras<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
+            <div class="link"><i class="fas fa-wrench"></i>Expansão e Obras<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
               <li><a href="#">Andamento das Obras</a></li>
-      				<li><a href="#">Canal de Relacionamento</a></li>
-      				<li><a href="#">Linha 2-Verde</a></li>
-      				<li><a href="#">Monotrilho-Linha-15-Prata</a></li>
+              <li><a href="#">Canal de Relacionamento</a></li>
+              <li><a href="#">Linha 2-Verde</a></li>
+              <li><a href="#">Monotrilho-Linha-15-Prata</a></li>
               <li><a href="#">Linha 4-Amarela</a></li>
               <li><a href="#">Linha 17-Ouro</a></li>
               <li><a href="#">Trens Modernizados</a></li>
               <li><a href="#">Desapropriações</a></li>
-      			</ul>
-      		</li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-user-tie"></i>Negócios<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
+            <div class="link"><i class="fas fa-user-tie"></i>Negócios<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
               <li><a href="#">Ofertas e Consultas</a></li>
-      				<li><a href="#">Comércio</a></li>
-      				<li><a href="#">Inovação</a></li>
+              <li><a href="#">Comércio</a></li>
+              <li><a href="#">Inovação</a></li>
               <li><a href="#">Negócios Imobiliários</a></li>
               <li><a href="#">Promoção</a></li>
               <li><a href="#">Publicidade</a></li>
               <li><a href="#">Dúvidas frequentes</a></li>
               <li><a href="#">Regulamentos</a></li>
               <li><a href="#">Outros Documentos</a></li>
-      			</ul>
-      		</li>
+            </ul>
+          </li>
+          <!--Li que não fica suspenso -->
           <li>
-      		  <div class="link"><i class="fas fa-phone-square-alt"></i>Fale conosco<i class="fa fa-chevron-down"></i></div>
-      			<ul class="submenu">
+            <div class="link"><i class="fas fa-phone-square-alt"></i>Fale conosco<i class="fa fa-chevron-down"></i></div>
+            <!--Lista que fica suspenso -->
+            <ul class="submenu">
               <li><a href="#">Registro da manifestação</a></li>
-      				<li><a href="#">Consulta do registro da manifestação</a></li>
-      				<li><a href="#">Canal de Denúncia</a></li>
-      				<li><a href="#">Ouvidoria</a></li>
+              <li><a href="#">Consulta do registro da manifestação</a></li>
+              <li><a href="#">Canal de Denúncia</a></li>
+              <li><a href="#">Ouvidoria</a></li>
               <li><a href="#">Imprensa</a></li>
               <li><a href="#">SIC</a></li>
-      			</ul>
-      		</li>
-      	</ul>
-    	</div>
+            </ul>
+          </li>
+        <!--Final de toda a lista do menu lateral-->
+        </ul>
+      </div>
     </aside>
 
     <!--Conteúdo Principal do site-->
@@ -358,12 +387,182 @@
         </div>
       </section>
       <!--FIM DO PROJETO "DIRETO DO METRÔ"-->
+
       
-      <!-- Nicole Rodrigues -->
+      <!--PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA-->
+      <section class="secao2">
+        <h2>Para onde você vai?</h2>
+        <div class="EmbarqueDestino">
+          <form>
+            <label for="embarque">Embarque: </label><br>
+            <select>
+              <option disabled></option>
+              <optgroup label="Metrô">
+                <option disabled></option>
+                <option selected>Selecione a Estação</option>
+                <option disabled></option>
+                <option disabled><b>Linha 1-Azul</b></option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Armênia">Armênia</option>
+                <option value="Carandiru">Carandiru</option>
+                <option value="Conceição">Conceição</option>
+                <option value="Jabaquara">Jabaquara</option>
+                <option value="Japão-Liberdade">Japão-Liberdade</option>
+                <option value="Jardim São Paulo-Ayrton Senna">Jardim São Paulo-Ayrton Senna</option>
+                <option value="Luz">Luz</option>
+                <option value="Parada Inglesa">Parada Inglesa</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="Portuguêsa-Tietê">Portuguêsa-Tietê</option>
+                <option value="Praça da Árvore">Praça da Árvore</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santana">Santana</option>
+                <option value="São Bento">São Bento</option>
+                <option value="São Joaquim">São Joaquim</option>
+                <option value="São Judas">São Judas</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Sé">Sé</option>
+                <option value="Tiradentes">Tiradente</option>
+                <option value="Tucuruvi">Tucuruvi</option>
+                <option value="Vergueiro">Vergueiro</option>
+                <option value="Vila Mariana">Vila Mariana</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 2-Verde</b></option>
+                <option value="Alto do Ipiranga">Alto do Ipiranga</option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Brigadeiro">Brigadeiro</option>
+                <option value="Chacara Klabin">Chácara Klabin</option>
+                <option value="Clínicas">Clínicas</option>
+                <option value="Consolação">Consolação</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="S. N. Sra. De Fátima-Sumaré">S. N. Sra. De Fátima-Sumaré</option>
+                <option value="Sacomã">Sacomã</option>
+                <option value="Santo-Imigrantes">Santos-Imigrantes</option>
+                <option value="Tamanduateí">Tamanduateí</option>
+                <option value="Trianon-Masp">Trianon-Masp</option>
+                <option value="Vila Madalena">Vila Madalena</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 3-Vermelha</b></option>
+                <option value="Anhangabaú">Anhangabaú</option>
+                <option value="Artur Alvim">Artur Alvim</option>
+                <option value="Belém">Belém</option>
+                <option value="Brás">Brás</option>
+                <option value="Bresser-Mooca">Bresser-Mooca</option>
+                <option value="Carrão">Carrão</option>
+                <option value="Corinthians-Itaquera">Corinthians-Itaquera</option>
+                <option value="Marechal Deodoro">Marechal Deodoro</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Patriarca">Patriarca</option>
+                <option value="Pedro II">Pedro II</option>
+                <option value="Penha">Penha</option>
+                <option value="República">República</option>
+                <option value="Santa Cecília">Santa Cecília</option>
+                <option value="Sé">Sé</option>
+                <option value="Tatuapé">Tatuapé</option>
+                <option value="Vila Matilde">Vila Matilde</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 15-Prata</b></option>
+                <option value="Camilo Haddad">Camilo Haddad</option>
+                <option value="Fazenda da Juta">Fazenda da Juta</option>
+                <option value="Jardim Planalto">Jardim Planalto</option>
+                <option value="Oratório">Oratório</option>
+                <option value="São Lucas">São Lucas</option>
+                <option value="São Mateus">São Mateus</option>
+                <option value="Sapopemba">Sapopemba</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option value="Vila Tolstói">Vila Tolstói</option>
+                <option value="Vila União">Vila União</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="ViaQuatro">
+                <option disabled></option>
+                <option disabled><b>Linha 4-Amarela</b></option>
+                <option value="Butantã">Butantã</option>
+                <option value="Faria Lima">Faria Lima</option>
+                <option value="Fradique Coutinho">Fradique Coutinho</option>
+                <option value="Higienópolis-Mackenzie">Higienópolis-Mackenzie</option>
+                <option value="Luz">Luz</option>
+                <option value="Oscar Freire">Oscar Freire</option>
+                <option value="Paulista">Paulista</option>
+                <option value="Pinheiros">Pinheiros</option>
+                <option value="República">República</option>
+                <option value="São Paulo-Morumbi">São Paulo-Morumbi</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="ViaMobilidade">
+                <option disabled></option>
+                <option disabled><b>Linha 5-Lilás</b></option>
+                <option value="AACD-Servidor">AACD-Servidor</option>
+                <option value="Adolfo Pinheiro">Adolfo Pinheiro</option>
+                <option value="Alto da Boa Vista">Alto da Boa Vista</option>
+                <option value="Borba Gato">Borba Gato</option>
+                <option value="Bresser-Mooca">Bresser-Mooca</option>
+                <option value="Brooklin">Brooklin</option>
+                <option value="Campo Belo">Campo Belo</option>
+                <option value="Campo Limpo">Campo Limpo</option>
+                <option value="Capão Redondo">Capão Redondo</option>
+                <option value="Chácara Klabin">Chácara Klabin</option>
+                <option value="Eucaliptos">Eucaliptos</option>
+                <option value="Giovanni Gronchi">Giovanni Gronchi</option>
+                <option value="Hospital São Paulo">Hospital São Paulo</option>
+                <option value="Largo 13">Largo 13</option>
+                <option value="Moema">Moema</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santo Amaro">Santo Amaro</option>
+                <option value="Vila das Belezas">Vila das Belezas</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="CPTM">
+                <option disabled></option>
+                <option disabled><b>Linha 7-Rubi</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 8-Diamante</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 9-Esmeralda</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 10-Turquesa</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 11-Coral</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 12-Safira</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 13-Jade</b></option>
+                <option disabled></option>
+              </optgroup>
+              <optgroup label="EMTU">
+                <option disabled></option>
+                <option disabled><b>Linha-EMTU</b></option>
+                <option disabled></option>
+              </optgroup>
+            </select>
+
+            <br><label for="Desembarque">Desembarque: </label><br>
+            <select></select>
+          </form>
+        </div>
+      </section>
+      <!--FIM DO PROJETO "PARA ONDE VOCÊ VAI?"-->
+
+      
+      <!-- NICOLE RODRIGUES DE OLIVEIRA BARBOSA -->
+      <!-- carrossel -->
       <section class="carousel">
-        <!-- Carrossel -->
+
         <ol class="galeria">
 
+          <!-- slide 1 -->
           <li style="background: url(https://catracalivre.com.br/wp-content/thumbnails/cc-zEWYnP-THRMXXhlTeZoYqPEE=/wp-content/uploads/2021/05/metro-sp-scaled-1.jpg);" id="slide1" tabindex="0" class="carouselslide">
             <div class="carouselsnapper">
               <a href="#slide5" class="slideprev"></a>
@@ -372,6 +571,7 @@
           </li>
 
 
+          <!-- slide 2 -->
           <li style="background: url(https://viatrolebus.com.br/wp-content/uploads/2019/04/metrosp-patio-jabaquara-renatolobo-viatrolebus03-990x743.jpg);" id="slide2" tabindex="0" class="carouselslide">
             <div class="carouselsnapper"></div>
             <a href="#slide1" class="slideprev"></a>
@@ -379,6 +579,7 @@
           </li>
 
 
+          <!-- slide 3 -->
           <li style="background: url(http://www.metro.sp.gov.br/images/home/livro-digital.jpg);" id="slide3" tabindex="0" class="carouselslide">
             <div class="carouselsnapper"></div>
             <a href="#slide2" class="slideprev"></a>
@@ -386,6 +587,7 @@
           </li>
 
 
+          <!-- slide 4 -->
           <li style="background: url(https://www.revistas.usp.br/wp/wp-content/uploads/20170123_00_metro_02-jornal-da-usp.png);" id="slide4" tabindex="0" class="carouselslide">
             <div class="carouselsnapper"></div>
             <a href="#slide3" class="slideprev"></a>
@@ -393,6 +595,7 @@
           </li>
 
 
+          <!-- slide 5 -->
           <li style="background: url(https://lh3.googleusercontent.com/proxy/C_Voli209quRrGJVG6pg1TGujHMi09ivnmbEhxNLaAOgoeUkZoN8_tL2sSPrPzkfRghePIF8k7bNbKpKnGch_JF5QiSUr8vMhEQX10Mos7Za_Q);" id="slide5" tabindex="0" class="carouselslide">
             <div class="carouselsnapper"></div>
             <a href="#slide4" class="slideprev"></a>
@@ -401,6 +604,7 @@
 
         </ol>
 
+        <!-- navegação inferior -->
         <ol class="carousel-navigation-list">
 
           <li class="carousel-navigation-item">
@@ -429,6 +633,7 @@
 
       <section>
 
+        <!-- últimas notícias -->
         <div class="noticias">
 
             <div>
@@ -445,7 +650,9 @@
               </div>
             </div>
 
+            <!-- icone lateral -->
             <div class="noticia-icon">
+              
               <div class="manchetes">
 
                   <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">12/08/2021 - 15:29 -
@@ -462,6 +669,7 @@
         </div>
 
       </section>
+
     </main>
 
     <!--artigos, anúncios, comentários, etc-->

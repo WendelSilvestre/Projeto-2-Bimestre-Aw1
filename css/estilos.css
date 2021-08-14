@@ -7,10 +7,7 @@
   font-family: sans-serif;
   outline: none;
   list-style: none;
-
 }
-
-body{}
 
 .container{
       width: 100%;
@@ -24,147 +21,169 @@ body{}
 }
 
 /* HEADER FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
+
+/*Estilização padrão da DIV que tem o conteudo do header*/
+.container{
+  width: 100%;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/*Para formar a estilização do cabeçalho, a linha de baixo e o espaço*/
 header{
-    padding: 22px 0;
-    border-bottom: 2px solid #DBDBDB;
+padding: 22px 0;
+border-bottom: 2px solid #DBDBDB;
 }
 
+/* Fazer com que eles fiqeum um do lado do outro*/
 header .linha{
-    display: flex;
-    justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 
+/*Controlar o tamanho da logo do metrô*/
 header figure img{
-    width: 120px;
+width: 120px;
 }
 
+/*Para que os links fiquem um do lado do outro*/
 header ul li{
-    display: inline-block;
+display: inline-block;
 }
 
+/*Cor das letras que são um link*/
 header li a{
-  color: black;
+color: black;
 }
 
+/*Controle do input de pesquisa*/
 header .pesquisar{
-  width: 150%;
-  border-radius: 5px;
+width: 150%;
+border-radius: 5px;
 }
 
+/*Colocar a linha do meio um pouco para baixo para ficar alinhado aos outros elementos*/
 .linha_meio{
-  margin-top: 0.5%;
+margin-top: 0.5%;
 }
 
+/*Controlar o tamanho do icones das redes sociais*/
 .linha_direita ul li{
-  font-size: 1.8em;
-  margin-right: 5px;
+font-size: 1.8em;
+margin-right: 5px;
 }
 
 /*MENU LATERAL-> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 #menu {
-  float: left;
-  width: 22%;
+float: left;
+width: 22%;
 }
 
+/*Para que os links não tenham nenhum estilo*/
 .menu a {
-    text-decoration: none;
+text-decoration: none;
 }
 
- .accordion {
-     width: 100%;
-     max-width: 360px;
-     margin: 30px auto 20px;
-     background: #FFF;
-     -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-     border-radius: 4px;
-     margin-top: -1px;
-     border-right: 1px solid #CCC;
- }
+/*Definir um padrão para todo o menu lateral*/
+.accordion {
+width: 100%;
+max-width: 360px;
+margin: 30px auto 20px;
+background: #FFF;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+margin-top: -1px;
+border-right: 1px solid #CCC;
+}
 
+/*Estilizar todas as classe com nome de link no menu lateral*/
 .accordion .link {
-    cursor: pointer;
-    display: block;
-    padding: 15px 15px 15px 42px;
-    color: #4D4D4D;
-    font-size: 14px;
-    font-weight: 700;
-    border-bottom: 1px solid #CCC;
-    position: relative;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+cursor: pointer;
+display: block;
+padding: 15px 15px 15px 42px;
+color: #4D4D4D;
+font-size: 14px;
+font-weight: 700;
+border-bottom: 1px solid #CCC;
+position: relative;
+-webkit-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
 }
 
+/*Para que o ultimo li não tenha nenhuma borda abaixo dele*/
 .accordion li:last-child .link {
-    border-bottom: 0;
+border-bottom: 0;
 }
 
+/*Estilização dos icones do meunu lateral*/
 .accordion li i {
-    position: absolute;
-    top: 16px;
-    left: 12px;
-    font-size: 18px;
-    color: #595959;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+position: absolute;
+top: 16px;
+left: 12px;
+font-size: 18px;
+color: #595959;
+-webkit-transition: all 0.4s ease;
+-o-transition: all 0.4s ease;
+transition: all 0.4s ease;
 }
 
 .accordion li i.fa-chevron-down {
-    right: 12px;
-    left: auto;
-    font-size: 16px;
+right: 12px;
+left: auto;
+font-size: 16px;
 }
 
 .accordion li.open .link {
-    color: #b63b4d;
+color: #b63b4d;
 }
 
 .accordion li.open i {
-    color: #b63b4d;
+color: #b63b4d;
 }
 .accordion li.open i.fa-chevron-down {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
+-webkit-transform: rotate(180deg);
+-ms-transform: rotate(180deg);
+-o-transform: rotate(180deg);
+transform: rotate(180deg);
 }
 
 .accordion li.default .submenu {display: block;}
 
 /*-Submenu-*/
- .submenu {
-     display: none;
-     background: #444359;
-     font-size: 14px;
- }
+.submenu {
+display: none;
+background: #444359;
+font-size: 14px;
+}
 
- .submenu li {
-     border-bottom: 1px solid #4b4a5e;
- }
+.submenu li {
+border-bottom: 1px solid #4b4a5e;
+}
 
- .submenu a {
-     display: block;
-     text-decoration: none;
-     color: #d9d9d9;
-     padding: 12px;
-     padding-left: 42px;
-     -webkit-transition: all 0.25s ease;
-     -o-transition: all 0.25s ease;
-     transition: all 0.25s ease;
- }
+.submenu a {
+display: block;
+text-decoration: none;
+color: #d9d9d9;
+padding: 12px;
+padding-left: 42px;
+-webkit-transition: all 0.25s ease;
+-o-transition: all 0.25s ease;
+transition: all 0.25s ease;
+}
 
- .submenu a:hover {
-     background: #b63b4d;
-     color: #FFF;
- }
+.submenu a:hover {
+background: #b63b4d;
+color: #FFF;
+}
 
 /*DIRETO DO METRÔ -> FEITO POR YASMIN PERESTRELO DA SILVA*/
 
 /*linha decorativa: tachada*/
 hr {
-  border: color: #494949;
+  border-color: #494949;
 }
 
 /*seção do Direto do Metrô*/
@@ -235,3 +254,202 @@ span {
 }
 
 /*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
+
+/* NICOLE RODRIGUES DE OLIVEIRA BARBOSA */
+  /*carrossel de noticias*/
+  .galeria {
+    grid-template-columns: repeat(15, 30vw);
+    grid-template-rows: 1fr;
+    
+    scroll-snap-type: both mandatory;
+    scroll-padding: 1rem;
+    scroll-behavior: smooth;
+    counter-reset: item;
+
+    overflow: scroll;
+    height: 45vh;
+    width: 50vw;
+
+    display: flex;
+  }
+  
+ .carousel li {
+    scroll-snap-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 0;
+  }
+
+@keyframes tonext {
+    75% { left: 0; }
+    95% { left: 100%; }
+    98% { left: 100%; }
+    99% { left: 0; }
+}
+
+@keyframes tostart {
+    75% { left: 0; }
+    95% { left: -300%; }
+    98% { left: -300%; }
+    99% { left: 0; }
+}
+
+@keyframes snap {
+  96% { scroll-snap-align: center; }
+  97% { scroll-snap-align: none; }
+  99% { scroll-snap-align: none; }
+  100% { scroll-snap-align: center; }
+}
+
+*::-webkit-scrollbar { width: 0; }
+  
+*::-webkit-scrollbar-track { background: transparent; }
+  
+*::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+.carousel ol li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.carousel {
+    filter: drop-shadow(0 0 10px rgba(29, 38, 117, 0.2));
+    height: 45vh;
+    width: 50vw;
+    float: right;
+}
+
+.carouselslide {
+    flex: 0 0 100%;
+    width: 10%;
+    counter-increment: item;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
+    background-position: right -50px, center !important;
+}
+
+.carouselslide:nth-child(even) {
+    background-color: rgb(255, 0, 21);
+}
+  
+.carouselslide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+
+.carouselsnapper {
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 5%;
+    scroll-snap-align: center;
+  }
+
+@media (hover: hover) {
+    .carouselsnapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carouselslide:last-child .carouselsnapper {
+      animation-name: tostart, snap;
+    }
+  }
+
+@media (prefers-reduced-motion: reduce) {
+    .carouselsnapper {
+      animation-name: none;
+    }
+  }
+  
+.carousel:hover .carouselsnapper, .carousel:focus-within .carouselsnapper {
+  animation-name: none;
+}
+
+/* navegação inferior */
+.carousel-navigation-list, .carousel-navigation-item {
+  display: inline-block;
+}
+
+.carousel-navigation-list {
+  background-color: transparent;
+  margin-left: 40%;
+}
+
+.navigation-button {
+  position: relative;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #285083;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  transition: transform 0.1s;
+}
+
+/* navegação lateral */
+.carousel::before, .carousel::after, .slideprev, .slidenext {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  top: 0;
+  margin-top: 22%;
+  transform: translateY(-50%);
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before, .slideprev {
+  left: 2rem;
+}
+
+.carousel::after, .slidenext {
+  right: 2rem;
+}
+
+.carousel::before, .carousel::after {
+  content: '';
+  background-color: #284f8375;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  pointer-events: none;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+/* notícias */
+.noticias, .manchetes {
+  float: left;
+  width: 40%;
+  border-left: 2px solid #494949;
+  color: #6a6a6a;
+  height: 153px;
+  padding: 7px 0px 0px 7px;
+}
+
+.manchetes a{ color: #404040; }
+
+.noticia-icon {
+  background: url(http://www.metro.sp.gov.br/images/home/metro-sao-paulo-noticias.gif) no-repeat right 0;
+  float: right;
+}
