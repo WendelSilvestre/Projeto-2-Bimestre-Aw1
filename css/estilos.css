@@ -7,6 +7,7 @@
   font-family: sans-serif;
   outline: none;
   list-style: none;
+
 }
 
 body{}
@@ -58,3 +59,79 @@ header .pesquisar{
   font-size: 1.8em;
   margin-right: 5px;
 }
+
+/*DIRETO DO METRÔ -> FEITO POR YASMIN PERESTRELO DA SILVA*/
+
+/*linha decorativa: tachada*/
+hr {
+  border: color: #494949;
+}
+
+/*seção do Direto do Metrô*/
+section {
+  width: 28%;
+  background-color: #f1f1f1;
+}
+
+/*div principal do Direto do Metrô tem padding-bottom: 4%*/
+#StatusLinhaMetro {
+  padding-bottom: 4%;
+}
+
+/*título "Direto do Metrô"*/
+#StatusLinhaMetro h2 {
+  text-align: center;
+  margin: 0 0 2% 0;
+  color: #494949;
+  padding-top: 2%;
+}
+
+/*Todas as listas do Direto do Metrô possuem padding-left: 3%*/
+.linhasMetro {
+  padding-left: 3%;
+}
+
+/*todas as listas do Direto do Metrô possuem margin-top: 2%*/
+.linhasMetro li {
+  margin-top: 2%;
+}
+
+/*Grid para as linhas do Metro, da ViaQuatro e da ViaMobilidade
+onde dentro delas, terá um grid para o nome das linhas e status delas
+com suas respectivas imagens*/
+.LinhaAzul, .LinhaVerde, .LinhaVermelha, .LinhaPrata, .LinhaAmarela, .LinhaLilas, .NomeLinha, .SituacaoLinha {
+  display: grid;
+  grid-template-columns: 50px 50px;
+}
+
+/*divs status e nome da linha possuem tamanho da fonte dos
+seus conteúdos em 90%*/
+.SituacaoLinha, .NomeLinha {
+  font-size: 90%;
+}
+
+/*parágrafos das divs NomeLinha e SituacaoLinha*/
+.NomeLinha p, .SituacaoLinha p {
+  width: 9em;
+  margin-top: 5%;
+  margin-left: -35%;
+  color: #6a6a6a;
+}
+
+/*div que mostra o status da linha de metrô tem margin-left: 10em*/
+.SituacaoLinha {
+  margin-left: 10em;
+}
+
+/*link que está dentro de paragráfo que está dentro da
+div SituacaoLinha tem cor cinza*/
+.SituacaoLinha p a {
+  color: #1a1a1a;
+}
+
+/*nome da empresa e data de atualização de dados tem tamanho 70%*/
+span {
+  font-size: 70%;
+}
+
+/*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
