@@ -10,3 +10,51 @@
 }
 
 body{}
+
+.container{
+      width: 100%;
+      max-width: 95%;
+      margin: 0 auto;
+      padding: 0 30px;
+  }
+
+.hidden{
+    display: none;
+}
+
+/* HEADER */
+header{
+    padding: 22px 0;
+    border-bottom: 2px solid #DBDBDB;
+}
+
+header .linha{
+    display: flex;
+    justify-content: space-between;
+}
+
+header figure img{
+    width: 120px;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+header li a{
+  color: black;
+}
+
+header .pesquisar{
+  width: 150%;
+  border-radius: 5px;
+}
+
+.linha_meio{
+  margin-top: 0.5%;
+}
+
+.linha_direita ul li{
+  font-size: 1.8em;
+  margin-right: 5px;
+}
