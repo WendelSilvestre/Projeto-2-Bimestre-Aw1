@@ -180,26 +180,18 @@ color: #FFF;
 }
 
 /*DIRETO DO METRÔ -> FEITO POR YASMIN PERESTRELO DA SILVA*/
-.secao1 {
-  float: left;
-  width: 29%;
-  background-color: #f1f1f1;
-}
-.secao2 {
-  float: left;
-  background-color: #d6d6d696;
-  width: 49%;
-  height: 60%;
-  padding-left: 1%;
-}
-
-.secao2 h2{
-  color: #285083;
-}
 
 /*linha decorativa: tachada*/
-hr {
-  border-color: #494949;
+.hr {
+  border: color: #494949;
+}
+
+/*seção do Direto do Metrô*/
+.secao1 {
+  width: 26.5%;
+  background-color: #f1f1f1;
+  margin-left: 23%;
+  margin-top: 1%;
 }
 
 /*div principal do Direto do Metrô tem padding-bottom: 4%*/
@@ -259,11 +251,39 @@ div SituacaoLinha tem cor cinza*/
 }
 
 /*nome da empresa e data de atualização de dados tem tamanho 70%*/
-span {
+.span {
   font-size: 70%;
+  color: #6a6a6a;
 }
 
 /*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
+
+
+/*PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA*/
+.secao2 {
+  width: 28%;
+  background-color: #f1f1f1;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+.secao2 h2 {
+  text-align: center;
+  margin: 0 0 2% 0;
+  color: #494949;
+  padding-top: 2%;
+}
+
+.EmbarqueDestino label {
+  margin-bottom: 50%;
+  color: #6a6a6a;
+}
+
+.EmbarqueDestino select {
+  width: 90%;
+}
+
+/*FIM DO CSS DO PROJETO "PARA ONDE VOCÊ VAI?"*/
 
 
 /* NICOLE RODRIGUES DE OLIVEIRA BARBOSA */
@@ -271,7 +291,7 @@ span {
   .galeria {
     grid-template-columns: repeat(15, 30vw);
     grid-template-rows: 1fr;
-    
+
     scroll-snap-type: both mandatory;
     scroll-padding: 1rem;
     scroll-behavior: smooth;
@@ -290,7 +310,7 @@ span {
     width: 49vw;
    float: left;
 }
-  
+
  .carousel li {
     scroll-snap-align: center;
     display: inline-block;
@@ -320,14 +340,14 @@ span {
 }
 
 *::-webkit-scrollbar { width: 0; }
-  
+
 *::-webkit-scrollbar-track { background: transparent; }
-  
+
 *::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
   }
-  
+
 .carousel ol li {
     list-style: none;
     margin: 0;
@@ -346,7 +366,7 @@ span {
 .carouselslide:nth-child(even) {
     background-color: rgb(255, 0, 21);
 }
-  
+
 .carouselslide:before {
     content: counter(item);
     position: absolute;
@@ -372,7 +392,7 @@ span {
       animation-duration: 4s;
       animation-iteration-count: infinite;
     }
-  
+
     .carouselslide:last-child .carouselsnapper {
       animation-name: tostart, snap;
     }
@@ -383,7 +403,7 @@ span {
       animation-name: none;
     }
   }
-  
+
 .carousel:hover .carouselsnapper, .carousel:focus-within .carouselsnapper {
   animation-name: none;
 }
@@ -425,10 +445,12 @@ span {
 
 .carousel::before, .slideprev {
   left: 2rem;
+  margin-top: -25%;
 }
 
 .carousel::after, .slidenext {
   right: 2rem;
+  margin-top: -25%;
 }
 
 .carousel::before, .carousel::after {
@@ -464,4 +486,41 @@ span {
 
 .noticia-icon {
   background: url(http://www.metro.sp.gov.br/images/home/metro-sao-paulo-noticias.gif) no-repeat right 0;
+}
+
+/*Footer -> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
+
+/*Estliza o Footer em si*/
+.footer{
+  margin-top: 20%; /*Tirar isso aqui quando for para o normal*/
+  bottom: 0;
+  width: 100%;
+  background-color: #CCC;
+}
+
+/*Estiliza os li da parte de cima do footer*/
+.footer_superior ul li {
+  display:inline-block;
+  padding: 2% ;
+}
+
+.footer_inferior a {
+  color: black;
+}
+
+/*Estiliza os ul da parte inferior do footer*/
+.footer_inferior ul{
+  display: inline-block;
+  margin: 1%;
+  font-size: 0.9em;
+}
+
+.footer_inferior ul li{
+  margin-top: 4%;
+}
+
+/*Estiliza o class titulo de cada ul do footer inferior*/
+.footer_inferior .titulo{
+  margin-bottom: 10%;
+  margin-top: 5%;
 }

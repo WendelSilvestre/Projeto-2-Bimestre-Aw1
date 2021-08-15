@@ -238,7 +238,7 @@
         <div name="StatusLinhaMetro" id="StatusLinhaMetro">
           <!--título principal: direto do metrô-->
           <h2>Direto do Metrô</h2>
-          <hr>
+          <hr class="hr">
           <!--div que engloba todas as listas: linhas de metro-->
           <div class="linhasMetro">
             <!--lista não ordenada para as linhas do metrô-->
@@ -325,10 +325,10 @@
               </li>
             </ul>
             <!--nome da empresa e data de atualização de dados-->
-            <span>
+            <span class="span">
               <p id="dataAtualizacaoStatus" style="margin-bottom: 2%;">Metrô, "data" às "hora"</p>
             </span>
-            <hr style="margin-left: -3%;">
+            <hr class="hr" style="margin-left: -3%;">
             <!--lista não ordenada para a linha da ViaQuatro-->
             <ul>
               <li class="LinhaAmarela">
@@ -353,7 +353,7 @@
               </li>
             </ul>
             <!--nome da empresa e data de atualização de dados-->
-            <span>
+            <span class="span">
               <p id="dataAtualizacaoStatus">ViaQuatro, "data" às "hora"</p>
             </span>
             <!--lista não ordenada para a linha da ViaMobilidade-->
@@ -380,7 +380,7 @@
               </li>
             </ul>
             <!--nome da empresa e data de atualização de dados-->
-            <span>
+            <span class="span">
               <p id="dataAtualizacaoStatus">ViaMobilidade, "data" às "hora"</p>
             </span>
           </div>
@@ -388,10 +388,84 @@
       </section>
       <!--FIM DO PROJETO "DIRETO DO METRÔ"-->
 
-      <section>
-        <!--PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA-->
+      <!-- NICOLE RODRIGUES DE OLIVEIRA BARBOSA -->
+      <!-- carrossel -->
+      <section class="carousel">
+
+        <ol class="galeria">
+
+          <!-- slide 1 -->
+          <li style="background: url(https://catracalivre.com.br/wp-content/thumbnails/cc-zEWYnP-THRMXXhlTeZoYqPEE=/wp-content/uploads/2021/05/metro-sp-scaled-1.jpg);" id="slide1" tabindex="0" class="carouselslide">
+            <div class="carouselsnapper">
+              <a href="#slide5" class="slideprev"></a>
+              <a href="#slide2" class="slidenext"></a>
+            </div>
+          </li>
+
+
+          <!-- slide 2 -->
+          <li style="background: url(https://viatrolebus.com.br/wp-content/uploads/2019/04/metrosp-patio-jabaquara-renatolobo-viatrolebus03-990x743.jpg);" id="slide2" tabindex="0" class="carouselslide">
+            <div class="carouselsnapper"></div>
+            <a href="#slide1" class="slideprev"></a>
+            <a href="#slide3" class="slidenext"></a>
+          </li>
+
+
+          <!-- slide 3 -->
+          <li style="background: url(http://www.metro.sp.gov.br/images/home/livro-digital.jpg);" id="slide3" tabindex="0" class="carouselslide">
+            <div class="carouselsnapper"></div>
+            <a href="#slide2" class="slideprev"></a>
+            <a href="#slide4" class="slidenext"></a>
+          </li>
+
+
+          <!-- slide 4 -->
+          <li style="background: url(https://www.revistas.usp.br/wp/wp-content/uploads/20170123_00_metro_02-jornal-da-usp.png);" id="slide4" tabindex="0" class="carouselslide">
+            <div class="carouselsnapper"></div>
+            <a href="#slide3" class="slideprev"></a>
+            <a href="#slide5" class="slidenext"></a>
+          </li>
+
+
+          <!-- slide 5 -->
+          <li style="background: url(https://lh3.googleusercontent.com/proxy/C_Voli209quRrGJVG6pg1TGujHMi09ivnmbEhxNLaAOgoeUkZoN8_tL2sSPrPzkfRghePIF8k7bNbKpKnGch_JF5QiSUr8vMhEQX10Mos7Za_Q);" id="slide5" tabindex="0" class="carouselslide">
+            <div class="carouselsnapper"></div>
+            <a href="#slide4" class="slideprev"></a>
+            <a href="#slide1" class="slidenext"></a>
+          </li>
+
+        </ol>
+
+        <!-- navegação inferior -->
+        <ol class="carousel-navigation-list">
+
+          <li class="carousel-navigation-item">
+            <a href="#slide1" class="navigation-button"></a>
+          </li>
+
+          <li class="carousel-navigation-item">
+            <a href="#slide2" class="navigation-button"></a>
+          </li>
+
+          <li class="carousel-navigation-item">
+            <a href="#slide3" class="navigation-button"></a>
+          </li>
+
+          <li class="carousel-navigation-item">
+            <a href="#slide4" class="navigation-button"></a>
+          </li>
+
+          <li class="carousel-navigation-item">
+            <a href="#slide5" class="navigation-button"></a>
+          </li>
+
+        </ol>
+
+      </section>
+
+      <!--PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA-->
       <section class="secao2">
-        <h2>Para onde você vai?</h2>
+        <h2>Para onde você vai?</h2><hr class="hr" style="margin-left: -3%;"><br>
         <div class="EmbarqueDestino">
           <form>
             <label for="embarque">Embarque: </label><br>
@@ -520,10 +594,48 @@
 
               <optgroup label="CPTM">
                 <option disabled></option>
-                <option disabled><b>Linha 7-Rubi</b></option>
+                <option disabled><b>Linha 7-Rubi (Luz-Francisco Morato-Jundiaí)</b></option>
+                <option value="Água Branca">Água Branca</option>
+                <option value="Baltazar Fidélis">Baltazar Fidélis</option>
+                <option value="Botujuru">Botujuru</option>
+                <option value="Caieiras">Caieiras</option>
+                <option value="Campo Limpo Paulista">Campo Limpo Paulista</option>
+                <option value="Francisco Morato">Francisco Morato</option>
+                <option value="Franco da Rocha">Franco da Rocha</option>
+                <option value="Jaraguá">Jaraguá</option>
+                <option value="Jundiaí">Jundiaí</option>
+                <option value="Lapa">Lapa</option>
+                <option value="Luz">Luz</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Perus">Perus</option>
+                <option value="Piqueri">Piqueri</option>
+                <option value="Pirituba">Pirituba</option>
+                <option value="Várzea Paulista">Várzea Paulista</option>
+                <option value="Vila Aurora">Vila Aurora</option>
+                <option value="Vila Clarice">Vila Clarice</option>
                 <option disabled></option>
 
-                <option disabled><b>Linha 8-Diamante</b></option>
+                <option disabled><b>Linha 8-Diamante (Júlio Prestes-Itapevi-Amador Bueno)</b></option>
+                <option value="Antônio João">Antônio João</option>
+                <option value="Barueri">Barueri</option>
+                <option value="Carapicuíba">Carapicuíba</option>
+                <option value="Comandante Sampaio">Comandante Sampaio</option>
+                <option value="Domingos de Moraes">Domingos de Moraes</option>
+                <option value="Engenheiro Cardoso">Engenheiro Cardoso</option>
+                <option value="General Miguel Costa">General Miguel Costa</option>
+                <option value="Imperatriz Leopoldina">Imperatriz Leopoldina</option>
+                <option value="Itapevi">Itapevi</option>
+                <option value="Jandira">Jandira</option>
+                <option value="Jardim Belval">Jardim Belval</option>
+                <option value="Jardim Silveira">Jardim Silveira</option>
+                <option value="Júlio Prestes">Júlio Prestes</option>
+                <option value="Lapa">Lapa</option>
+                <option value="Osasco">Osasco</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Presidente Altino">Presidente Altino</option>
+                <option value="Quitaúna">Quitaúna</option>
+                <option value="Sagrado Coração">Sagrado Coração</option>
+                <option value="Santa Terezinha">Santa Terezinha</option>
                 <option disabled></option>
 
                 <option disabled><b>Linha 9-Esmeralda</b></option>
@@ -548,8 +660,282 @@
               </optgroup>
             </select>
 
-            <br><label for="Desembarque">Desembarque: </label><br>
-            <select></select>
+            <br><br><label for="Desembarque">Desembarque: </label><br>
+            <select>
+              <option disabled></option>
+              <optgroup label="Metrô">
+                <option disabled></option>
+                <option selected>Selecione a Estação</option>
+                <option disabled></option>
+                <option disabled><b>Linha 1-Azul</b></option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Armênia">Armênia</option>
+                <option value="Carandiru">Carandiru</option>
+                <option value="Conceição">Conceição</option>
+                <option value="Jabaquara">Jabaquara</option>
+                <option value="Japão-Liberdade">Japão-Liberdade</option>
+                <option value="Jardim São Paulo-Ayrton Senna">Jardim São Paulo-Ayrton Senna</option>
+                <option value="Luz">Luz</option>
+                <option value="Parada Inglesa">Parada Inglesa</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="Portuguêsa-Tietê">Portuguêsa-Tietê</option>
+                <option value="Praça da Árvore">Praça da Árvore</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santana">Santana</option>
+                <option value="São Bento">São Bento</option>
+                <option value="São Joaquim">São Joaquim</option>
+                <option value="São Judas">São Judas</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Sé">Sé</option>
+                <option value="Tiradentes">Tiradente</option>
+                <option value="Tucuruvi">Tucuruvi</option>
+                <option value="Vergueiro">Vergueiro</option>
+                <option value="Vila Mariana">Vila Mariana</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 2-Verde</b></option>
+                <option value="Alto do Ipiranga">Alto do Ipiranga</option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Brigadeiro">Brigadeiro</option>
+                <option value="Chacara Klabin">Chácara Klabin</option>
+                <option value="Clínicas">Clínicas</option>
+                <option value="Consolação">Consolação</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="S. N. Sra. De Fátima-Sumaré">S. N. Sra. De Fátima-Sumaré</option>
+                <option value="Sacomã">Sacomã</option>
+                <option value="Santo-Imigrantes">Santos-Imigrantes</option>
+                <option value="Tamanduateí">Tamanduateí</option>
+                <option value="Trianon-Masp">Trianon-Masp</option>
+                <option value="Vila Madalena">Vila Madalena</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 3-Vermelha</b></option>
+                <option value="Anhangabaú">Anhangabaú</option>
+                <option value="Artur Alvim">Artur Alvim</option>
+                <option value="Belém">Belém</option>
+                <option value="Brás">Brás</option>
+                <option value="Bresser-Mooca">Bresser-Mooca</option>
+                <option value="Carrão">Carrão</option>
+                <option value="Corinthians-Itaquera">Corinthians-Itaquera</option>
+                <option value="Marechal Deodoro">Marechal Deodoro</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Patriarca">Patriarca</option>
+                <option value="Pedro II">Pedro II</option>
+                <option value="Penha">Penha</option>
+                <option value="República">República</option>
+                <option value="Santa Cecília">Santa Cecília</option>
+                <option value="Sé">Sé</option>
+                <option value="Tatuapé">Tatuapé</option>
+                <option value="Vila Matilde">Vila Matilde</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 15-Prata</b></option>
+                <option value="Camilo Haddad">Camilo Haddad</option>
+                <option value="Fazenda da Juta">Fazenda da Juta</option>
+                <option value="Jardim Planalto">Jardim Planalto</option>
+                <option value="Oratório">Oratório</option>
+                <option value="São Lucas">São Lucas</option>
+                <option value="São Mateus">São Mateus</option>
+                <option value="Sapopemba">Sapopemba</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option value="Vila Tolstói">Vila Tolstói</option>
+                <option value="Vila União">Vila União</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="ViaQuatro">
+                <option disabled></option>
+                <option disabled><b>Linha 4-Amarela</b></option>
+                <option value="Butantã">Butantã</option>
+                <option value="Faria Lima">Faria Lima</option>
+                <option value="Fradique Coutinho">Fradique Coutinho</option>
+                <option value="Higienópolis-Mackenzie">Higienópolis-Mackenzie</option>
+                <option value="Luz">Luz</option>
+                <option value="Oscar Freire">Oscar Freire</option>
+                <option value="Paulista">Paulista</option>
+                <option value="Pinheiros">Pinheiros</option>
+                <option value="República">República</option>
+                <option value="São Paulo-Morumbi">São Paulo-Morumbi</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="ViaMobilidade">
+                <option disabled></option>
+                <option disabled><b>Linha 5-Lilás</b></option>
+                <option value="AACD-Servidor">AACD-Servidor</option>
+                <option value="Adolfo Pinheiro">Adolfo Pinheiro</option>
+                <option value="Alto da Boa Vista">Alto da Boa Vista</option>
+                <option value="Borba Gato">Borba Gato</option>
+                <option value="Bresser-Mooca">Bresser-Mooca</option>
+                <option value="Brooklin">Brooklin</option>
+                <option value="Campo Belo">Campo Belo</option>
+                <option value="Campo Limpo">Campo Limpo</option>
+                <option value="Capão Redondo">Capão Redondo</option>
+                <option value="Chácara Klabin">Chácara Klabin</option>
+                <option value="Eucaliptos">Eucaliptos</option>
+                <option value="Giovanni Gronchi">Giovanni Gronchi</option>
+                <option value="Hospital São Paulo">Hospital São Paulo</option>
+                <option value="Largo 13">Largo 13</option>
+                <option value="Moema">Moema</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santo Amaro">Santo Amaro</option>
+                <option value="Vila das Belezas">Vila das Belezas</option>
+                <option disabled></option>
+              </optgroup>
+
+              <optgroup label="CPTM">
+                <option disabled></option>
+                <option disabled><b>Linha 7-Rubi (Luz-Francisco Morato-Jundiaí)</b></option>
+                <option value="Água Branca">Água Branca</option>
+                <option value="Baltazar Fidélis">Baltazar Fidélis</option>
+                <option value="Botujuru">Botujuru</option>
+                <option value="Caieiras">Caieiras</option>
+                <option value="Campo Limpo Paulista">Campo Limpo Paulista</option>
+                <option value="Francisco Morato">Francisco Morato</option>
+                <option value="Franco da Rocha">Franco da Rocha</option>
+                <option value="Jaraguá">Jaraguá</option>
+                <option value="Jundiaí">Jundiaí</option>
+                <option value="Lapa">Lapa</option>
+                <option value="Luz">Luz</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Perus">Perus</option>
+                <option value="Piqueri">Piqueri</option>
+                <option value="Pirituba">Pirituba</option>
+                <option value="Várzea Paulista">Várzea Paulista</option>
+                <option value="Vila Aurora">Vila Aurora</option>
+                <option value="Vila Clarice">Vila Clarice</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 8-Diamante (Júlio Prestes-Itapevi-Amador Bueno)</b></option>
+                <option value="Antônio João">Antônio João</option>
+                <option value="Barueri">Barueri</option>
+                <option value="Carapicuíba">Carapicuíba</option>
+                <option value="Comandante Sampaio">Comandante Sampaio</option>
+                <option value="Domingos de Moraes">Domingos de Moraes</option>
+                <option value="Engenheiro Cardoso">Engenheiro Cardoso</option>
+                <option value="General Miguel Costa">General Miguel Costa</option>
+                <option value="Imperatriz Leopoldina">Imperatriz Leopoldina</option>
+                <option value="Itapevi">Itapevi</option>
+                <option value="Jandira">Jandira</option>
+                <option value="Jardim Belval">Jardim Belval</option>
+                <option value="Jardim Silveira">Jardim Silveira</option>
+                <option value="Júlio Prestes">Júlio Prestes</option>
+                <option value="Lapa">Lapa</option>
+                <option value="Osasco">Osasco</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Presidente Altino">Presidente Altino</option>
+                <option value="Quitaúna">Quitaúna</option>
+                <option value="Sagrado Coração">Sagrado Coração</option>
+                <option value="Santa Terezinha">Santa Terezinha</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 9-Esmeralda</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 10-Turquesa</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 11-Coral</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 12-Safira</b></option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 13-Jade</b></option>
+                <option disabled></option>
+              </optgroup>
+              <optgroup label="EMTU">
+                <option disabled></option>
+                <option disabled><b>Linha-EMTU</b></option>
+                <option disabled></option>
+              </optgroup>
+            </select>
+
+            <br><br><label for="embarque">Busca de Estações/Terminais: </label><hr><br>
+            <select>
+              <option disabled></option>
+              <optgroup label="Metrô">
+                <option disabled></option>
+                <option selected>Selecione a Estação</option>
+                <option disabled></option>
+                <option disabled><b>Linha 1-Azul</b></option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Armênia">Armênia</option>
+                <option value="Carandiru">Carandiru</option>
+                <option value="Conceição">Conceição</option>
+                <option value="Jabaquara">Jabaquara</option>
+                <option value="Japão-Liberdade">Japão-Liberdade</option>
+                <option value="Jardim São Paulo-Ayrton Senna">Jardim São Paulo-Ayrton Senna</option>
+                <option value="Luz">Luz</option>
+                <option value="Parada Inglesa">Parada Inglesa</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="Portuguêsa-Tietê">Portuguêsa-Tietê</option>
+                <option value="Praça da Árvore">Praça da Árvore</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santana">Santana</option>
+                <option value="São Bento">São Bento</option>
+                <option value="São Joaquim">São Joaquim</option>
+                <option value="São Judas">São Judas</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Sé">Sé</option>
+                <option value="Tiradentes">Tiradente</option>
+                <option value="Tucuruvi">Tucuruvi</option>
+                <option value="Vergueiro">Vergueiro</option>
+                <option value="Vila Mariana">Vila Mariana</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 2-Verde</b></option>
+                <option value="Alto do Ipiranga">Alto do Ipiranga</option>
+                <option value="Ana Rosa">Ana Rosa</option>
+                <option value="Brigadeiro">Brigadeiro</option>
+                <option value="Chacara Klabin">Chácara Klabin</option>
+                <option value="Clínicas">Clínicas</option>
+                <option value="Consolação">Consolação</option>
+                <option value="Paraíso">Paraíso</option>
+                <option value="S. N. Sra. De Fátima-Sumaré">S. N. Sra. De Fátima-Sumaré</option>
+                <option value="Sacomã">Sacomã</option>
+                <option value="Santo-Imigrantes">Santos-Imigrantes</option>
+                <option value="Tamanduateí">Tamanduateí</option>
+                <option value="Trianon-Masp">Trianon-Masp</option>
+                <option value="Vila Madalena">Vila Madalena</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 3-Vermelha</b></option>
+                <option value="Anhangabaú">Anhangabaú</option>
+                <option value="Artur Alvim">Artur Alvim</option>
+                <option value="Belém">Belém</option>
+                <option value="Brás">Brás</option>
+                <option value="Bresser-Mooca">Bresser-Mooca</option>
+                <option value="Carrão">Carrão</option>
+                <option value="Corinthians-Itaquera">Corinthians-Itaquera</option>
+                <option value="Marechal Deodoro">Marechal Deodoro</option>
+                <option value="Palmeiras-Barra Funda">Palmeiras-Barra Funda</option>
+                <option value="Patriarca">Patriarca</option>
+                <option value="Pedro II">Pedro II</option>
+                <option value="Penha">Penha</option>
+                <option value="República">República</option>
+                <option value="Santa Cecília">Santa Cecília</option>
+                <option value="Sé">Sé</option>
+                <option value="Tatuapé">Tatuapé</option>
+                <option value="Vila Matilde">Vila Matilde</option>
+                <option disabled></option>
+
+                <option disabled><b>Linha 15-Prata</b></option>
+                <option value="Camilo Haddad">Camilo Haddad</option>
+                <option value="Fazenda da Juta">Fazenda da Juta</option>
+                <option value="Jardim Planalto">Jardim Planalto</option>
+                <option value="Oratório">Oratório</option>
+                <option value="São Lucas">São Lucas</option>
+                <option value="São Mateus">São Mateus</option>
+                <option value="Sapopemba">Sapopemba</option>
+                <option value="Vila Prudente">Vila Prudente</option>
+                <option value="Vila Tolstói">Vila Tolstói</option>
+                <option value="Vila União">Vila União</option>
+                <option disabled></option>
+              </optgroup>
+            </select>
           </form>
         </div>
       </section>
@@ -637,11 +1023,11 @@
             <div>
               <div class="manchetes">
 
-                <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">13/08/2021 - 15:17 - 
+                <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">13/08/2021 - 15:17 -
                     <a href="/noticias/obras-para-expansao-da-linha-2verde-alteram-transito-na-rua-sao-serafim-a-partir-da-proxima-segunda.fss">Obras para expansão da Linha 2-Verde alteram trânsito na rua São ...</a>
                 </p>
 
-                <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">11/08/2021 - 18:02 - 
+                <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">11/08/2021 - 18:02 -
                     <a href="/noticias/estacao-tatuape-do-metro-tera-distribuicao-de-testes-para-diagnostico-do-hiv.fss">Estação Tatuapé do Metrô terá distribuição de testes para diagnós...</a>
                 </p>
 
@@ -650,13 +1036,13 @@
 
             <!-- icone lateral -->
               <div class="noticia-icon">
-                
+
                 <div class="manchetes">
 
                     <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">12/08/2021 - 15:29 -
                         <a href="/noticias/obras-para-expansao-da-linha-2-verde-modificam-trafego-na-vila-prudente.fss">Obras para expansão da Linha 2- Verde modificam tráfego na Vila P...</a>
                     </p>
-                    
+
                     <p xmlns:doc="http://tempuri.org/DocumentoBase.xsd" xmlns:dt="http://xsltsl.org/date-time">10/08/2021 - 09:09 -
                         <a href="/noticias/10-08-2021-metro-de-sao-paulo-recebe-aprovacao-do-caf-para-financiamento-de-us-550-milhoes.fss">10/08/2021 - Metrô de São Paulo recebe aprovação do CAF, para fin...</a>
                     </p>
@@ -674,8 +1060,103 @@
     <!--artigos, anúncios, comentários, etc-->
     <article></article>
 
-    <!--Rodapé do site-->
-    <footer></footer>
+    <!--Rodapé do site FEITO POR WENDEL DE OLIVEIRA SILVESTRE-->
+    <footer>
+      <div class="footer">
+        <div class="footer_superior">
+            <ul>
+              <li><figure style="margin-right: 20px;"><img src="http://www.metro.sp.gov.br/images/companhia-metro.png" alt="CopyrightMetro"></figure><li>
+              <li><figure><img src="http://www.metro.sp.gov.br/images/cptm-logo.png" alt="CopyrightMetro"></figure><li>
+                <li><figure><img src="http://www.metro.sp.gov.br/images/emtu-logo.png" alt="CopyrightMetro"></figure><li>
+              <li><figure><img src="http://www.metro.sp.gov.br/images/estrada-ferro-logo.png" alt="CopyrightMetro"></figure><li>
+              <li><figure><img src="http://www.metro.sp.gov.br/images/logo-horizontal.png" alt="CopyrightMetro"></figure><li>
+            </ul>
+        </div>
+        <hr>
+        <div class="footer_inferior">
+          <ul style="margin-left: 2%;">
+            <li class="titulo"><strong>Empresa</strong><li>
+            <li><a href="">- Institucional</a><li>
+            <li><a href="">- Política de Privacidade</a><li>
+            <li><a href="">- Sustentabilidade</a><li>
+            <li><a href="">- Licenciamento Ambiental</a><li>
+            <li><a href="">- Licitações</a><li>
+            <li><a href="">- Negócios e oportunidades</a><li>
+            <li><a href="">- Números e Pesquisas</a><li>
+            <li><a href="">- Programa de visitas</a><li>
+            <li><a href="">- Marketing Corporativo</a><li>
+            <li><a href="">- Procedimentos Cartazes</a><li>
+            <li><a href="">- Procedimentos Ações Sociais</a><li>
+            <li><a href="">- Códigos de Conduta</a><li>
+            <li><a href="">- Calendário Institucional</a><li>
+            <li><a href="">- Metrô Social</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Sua viagem</strong><li>
+            <li><a href="">- Direto do Metrô</a><li>
+            <li><a href="">- Guia do Passageiro</a><li>
+            <li><a href="">- Para onde você vai?</a><li>
+            <li><a href="">- Mapa da rede</a><li>
+            <li><a href="">- Linhas e estações</a><li>
+            <li><a href="">- Estacionamentos</a><li>
+            <li><a href="">- Bicicletas</a><li>
+            <li><a href="">- Atendimento preferencial</a><li>
+            <li><a href="">- Sanitários públicos</a><li>
+            <li><a href="">- Bilhetes e cartões</a><li>
+            <li><a href="">- Achados e perdidos</a><li>
+            <li><a href="">- Declaraão de ocorrências</a><li>
+            <li><a href="">- Política de anormalidade</a><li>
+            <li><a href="">- Pontos de interesse</a><li>
+            <li><a href="">- Horários</a><li>
+            <li><a href="">- Terminais Rodoviários</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Imprensa</strong><li>
+              <li><a href="">- Últimas notícias</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Cultura</strong><li>
+            <li><a href="">- Arte no Metrô</a><li>
+            <li><a href="">- Livro Digital</a><li>
+            <li><a href="">- Linha da Cultura</a><li>
+            <li><a href="">- Galeria virtual</a><li>
+            <li><a href="">- Poesia no Metrô</a><li>
+            <li><a href="">- Bibliote Neli Siqueira</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Tecnologia</strong><li>
+            <li><a href="">- Manutenção</a><li>
+            <li><a href="">- Operação</a><li>
+            <li><a href="">- Sistemas</a><li>
+            <li><a href="">- Construção</a><li>
+            <li><a href="">- Arquitetura</a><li>
+            <li><a href="">- Trens e Frota</a><li>
+            <li><a href="">- Informações Portal</a><li>
+            <li><a href="">- Transparência</a><li>
+            <li><a href="">- Artigos e Publicações</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Expansão e Obras</strong><li>
+            <li><a href="">- Andamento das Obras</a><li>
+            <li><a href="">- Canal de Relacionamento</a><li>
+            <li><a href="">- Monotrilho Linha-15</a><li>
+            <li><a href="">- Linha-4 Amarela</a><li>
+            <li><a href="">- Linha 5-Lilás</a><li>
+            <li><a href="">- Linha 17-Ouro</a><li>
+            <li><a href="">- Trens Modernizados</a><li>
+            <li><a href="">- Desapropriações</a><li>
+          </ul>
+          <ul>
+            <li class="titulo"><strong>Negócios</strong><li>
+            <li><a href="">- Institucional</a><li>
+            <li><a href="">- Política de Privacidade</a><li>
+            <li><a href="">- Sustentabilidade</a><li>
+            <li><a href="">- Licenciamento Ambiental</a><li>
+            <li><a href="">- Licitações</a><li>
+          </ul>
+        </div>
+      </div>
+    </footer>
 
     <!--Script Menu lateral Créditos:Agustin Ortiz -->
     <script>
