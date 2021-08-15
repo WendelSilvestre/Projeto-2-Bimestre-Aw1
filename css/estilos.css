@@ -498,6 +498,10 @@ div SituacaoLinha tem cor cinza*/
   margin-right: 10%;
 }
 
+a:hover {
+  border-bottom: 1px red solid;
+}
+
 /*Footer -> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 
 /*Estliza o Footer em si*/
