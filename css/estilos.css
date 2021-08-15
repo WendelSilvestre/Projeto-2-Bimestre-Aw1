@@ -180,16 +180,13 @@ color: #FFF;
 }
 
 /*DIRETO DO METRÔ -> FEITO POR YASMIN PERESTRELO DA SILVA*/
+.secao2 { float: left; position: relative; }
+.secao1 { float: left; width: 28%;
+  background-color: #f1f1f1; }
 
 /*linha decorativa: tachada*/
 hr {
   border-color: #494949;
-}
-
-/*seção do Direto do Metrô*/
-section {
-  width: 28%;
-  background-color: #f1f1f1;
 }
 
 /*div principal do Direto do Metrô tem padding-bottom: 4%*/
@@ -254,6 +251,7 @@ span {
 }
 
 /*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
+
 
 /* NICOLE RODRIGUES DE OLIVEIRA BARBOSA */
   /*carrossel de noticias*/
@@ -439,12 +437,12 @@ span {
 
 /* notícias */
 .noticias, .manchetes {
-  float: left;
   width: 40%;
   border-left: 2px solid #494949;
   color: #6a6a6a;
   height: 153px;
   padding: 7px 0px 0px 7px;
+  float: right;
 }
 
 .manchetes a{ color: #404040; }
