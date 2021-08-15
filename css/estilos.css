@@ -258,34 +258,6 @@ div SituacaoLinha tem cor cinza*/
 
 /*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
 
-
-/*PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA*/
-.secao2 {
-  width: 28%;
-  background-color: #f1f1f1;
-  padding-bottom: 2%;
-  padding-left: 2%;
-}
-
-.secao2 h2 {
-  text-align: center;
-  margin: 0 0 2% 0;
-  color: #494949;
-  padding-top: 2%;
-}
-
-.EmbarqueDestino label {
-  margin-bottom: 50%;
-  color: #6a6a6a;
-}
-
-.EmbarqueDestino select {
-  width: 90%;
-}
-
-/*FIM DO CSS DO PROJETO "PARA ONDE VOCÊ VAI?"*/
-
-
 /* NICOLE RODRIGUES DE OLIVEIRA BARBOSA */
   /*carrossel de noticias*/
   .galeria {
@@ -298,8 +270,8 @@ div SituacaoLinha tem cor cinza*/
     counter-reset: item;
 
     overflow: scroll;
-    height: 48.5vh;
-    width: 49vw;
+    height: 48vh;
+    width: 48vw;
 
     display: flex;
   }
@@ -308,7 +280,8 @@ div SituacaoLinha tem cor cinza*/
     filter: drop-shadow(0 0 10px rgba(29, 38, 117, 0.2));
     height: 60vh;
     width: 49vw;
-   float: left;
+    margin-top: -22.5%;
+    margin-left: 51%;
 }
 
  .carousel li {
@@ -416,6 +389,7 @@ div SituacaoLinha tem cor cinza*/
 .carousel-navigation-list {
   background-color: transparent;
   margin-left: 40%;
+  width: 50%;
 }
 
 .navigation-button {
@@ -470,6 +444,34 @@ div SituacaoLinha tem cor cinza*/
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
 
+/*PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA*/
+.secao2 {
+  width: 26.5%;
+  background-color: #f1f1f1;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  margin-left: 23%;
+  margin-top: -5%;
+}
+
+.secao2 h2 {
+  text-align: center;
+  margin: 0 0 2% 0;
+  color: #494949;
+  padding-top: 2%;
+}
+
+.EmbarqueDestino label {
+  margin-bottom: 50%;
+  color: #6a6a6a;
+}
+
+.EmbarqueDestino select {
+  width: 90%;
+}
+
+/*FIM DO CSS DO PROJETO "PARA ONDE VOCÊ VAI?"*/
+
 /* notícias */
 .noticias, .manchetes {
   width: 55%;
@@ -480,20 +482,28 @@ div SituacaoLinha tem cor cinza*/
 
 .manchetes { border-left: 2px solid #494949; }
 .manchetes a { color: #404040; }
-.manchetes p { margin-top: 5%; }
+.manchetes p {
+  margin-top: 5%;
+  width: 140%;
+}
 
-.noticias { float: left; }
+.noticias {
+  margin-left: 50.5%;
+  margin-top: -18%;
+  width: 50%;
+}
 
 .noticia-icon {
   background: url(http://www.metro.sp.gov.br/images/home/metro-sao-paulo-noticias.gif) no-repeat right 0;
+  margin-right: 10%;
 }
 
 /*Footer -> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 
 /*Estliza o Footer em si*/
 .footer{
-  margin-top: 20%; /*Tirar isso aqui quando for para o normal*/
-  bottom: 0;
+  margin-top: 5%; /*Tirar isso aqui quando for para o normal*/
+  bottom: 0%;
   width: 100%;
   background-color: #CCC;
 }
