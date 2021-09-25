@@ -514,12 +514,22 @@ a:hover {
 
 /*Estiliza os li da parte de cima do footer*/
 .footer_superior ul li {
-  display:inline-block;
+  display: inline-block;
   padding: 2% ;
+}
+
+.footer_inferior{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .footer_inferior a {
   color: black;
+}
+
+.footer_inferior a:hover {
+  border-bottom: 1px black solid;
 }
 
 /*Estiliza os ul da parte inferior do footer*/
