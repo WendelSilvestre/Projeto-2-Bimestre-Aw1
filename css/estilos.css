@@ -17,8 +17,13 @@
   }
 
 .hidden{
-    display: none;
+    display: block;
 }
+
+a:hover {
+  border-bottom: 2px rgb(116, 116, 116) solid;
+}
+
 
 /* HEADER FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 
@@ -28,6 +33,11 @@
   max-width: 95%;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+.linha_meio {
+  display: grid;
+  grid-template-columns: 0px 50px 70%;
 }
 
 /*Para formar a estilização do cabeçalho, a linha de baixo e o espaço*/
@@ -60,6 +70,8 @@ color: black;
 /*Controle do input de pesquisa*/
 header .pesquisar{
 width: 150%;
+margin-left: -20%;
+color: #4D4D4D;
 border-radius: 5px;
 }
 
@@ -183,7 +195,7 @@ color: #FFF;
 
 /*linha decorativa: tachada*/
 .hr {
-  border: color: #494949;
+  border: #494949;
 }
 
 /*seção do Direto do Metrô*/
@@ -496,10 +508,6 @@ div SituacaoLinha tem cor cinza*/
 .noticia-icon {
   background: url(http://www.metro.sp.gov.br/images/home/metro-sao-paulo-noticias.gif) no-repeat right 0;
   margin-right: 10%;
-}
-
-a:hover {
-  border-bottom: 1px red solid;
 }
 
 /*Footer -> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
