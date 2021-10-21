@@ -20,8 +20,12 @@
     display: block;
 }
 
-a:hover {
-  border-bottom: 2px rgb(116, 116, 116) solid;
+/*hover nos links do menu - YASMIN PERESTRELO DA SILVA*/
+.linha_esquerda a:hover {
+  border-radius: 5px 5px;
+  background-color: #1c5ca2;
+  color: white;
+  transition: 0.7s;
 }
 
 
@@ -555,4 +559,37 @@ div SituacaoLinha tem cor cinza*/
 .footer_inferior .titulo{
   margin-bottom: 10%;
   margin-top: 5%;
+}
+
+
+/*Transição dos ícones das redes sociais - YASMIN PERESTRELO DA SILVA*/
+
+.linha_direita .face:hover {
+  color:#3b5998;
+  transition: 1s;
+}
+
+.linha_direita .bird:hover {
+  color:#00aced;
+  transition: 1s;
+}
+
+.linha_direita .yout:hover {
+  color:#ee332c;
+  transition: 1s;
+}
+
+.linha_direita .insta:hover {
+  background-image: linear-gradient(to bottom, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 1s;
+}
+
+/*transição da situação da linha - YASMIN PERESTRELO DA SILVA*/
+
+.SituacaoLinha p a:hover {
+  border-bottom: 2px rgb(80, 80, 80) solid;
 }
