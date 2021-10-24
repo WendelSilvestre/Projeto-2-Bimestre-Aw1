@@ -11,8 +11,25 @@
 
   /*MAIN PRINCIPAL FEITO POR YASMIN PERESTRELO DA SILVA*/
 
-  .titulo h1 {
+  .titulo-empresa {
+    background-color: rgb(40, 80, 131);
+    position: relative;
+    animation: mover 5s;
+    animation-direction: reverse;
+    animation-fill-mode: forwards;
+    margin-left: 22%;
+}
+
+
+  .titulo-empresa h1 {
+      color: whitesmoke;
       margin-left: 5%;
-      font-size: 110%;
-      
+  }
+  
+
+  #titulo-animacao {animation-timing-function: ease;}
+  
+  @keyframes mover {
+    from {left: 0px;}
+    to {left: 50%;}
   }

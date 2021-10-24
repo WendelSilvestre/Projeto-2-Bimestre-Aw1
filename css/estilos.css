@@ -166,7 +166,7 @@ border-bottom: 1px solid #716f8d;
 .submenu a {
 display: block;
 text-decoration: none;
-color: #d9d9d9;
+color: whitesmoke;
 padding: 12px;
 padding-left: 42px;
 -webkit-transition: all 0.25s ease;
@@ -582,7 +582,7 @@ div SituacaoLinha tem cor cinza*/
 /*hover nos links do menu - YASMIN PERESTRELO DA SILVA*/
 .linha_esquerda a:hover {
   border-radius: 4px 4px;
-  background-color: #444359;
+  background-color: rgb(40, 80, 131);
   width: 10%;
   height: 10%;
   color: whitesmoke;
