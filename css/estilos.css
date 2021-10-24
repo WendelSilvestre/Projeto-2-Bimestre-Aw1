@@ -9,26 +9,6 @@
   list-style: none;
 }
 
-.container{
-      width: 100%;
-      max-width: 95%;
-      margin: 0 auto;
-      padding: 0 30px;
-  }
-
-.hidden{
-    display: block;
-}
-
-/*hover nos links do menu - YASMIN PERESTRELO DA SILVA*/
-.linha_esquerda a:hover {
-  border-radius: 5px 5px;
-  background-color: #1c5ca2;
-  color: white;
-  transition: 0.7s;
-}
-
-
 /* HEADER FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
 
 /*Estilização padrão da DIV que tem o conteudo do header*/
@@ -94,6 +74,10 @@ margin-right: 5px;
 #menu {
 float: left;
 width: 22%;
+}
+
+li div a {
+  color: #595959;
 }
 
 /*Para que os links não tenham nenhum estilo*/
@@ -510,8 +494,13 @@ div SituacaoLinha tem cor cinza*/
 }
 
 .noticia-icon {
-  background: url(http://www.metro.sp.gov.br/images/home/metro-sao-paulo-noticias.gif) no-repeat right 0;
   margin-right: 10%;
+}
+
+.noticia-icon-real {
+  position: absolute;
+  right: 8%;
+  bottom: 2%;
 }
 
 /*Footer -> FEITO POR WENDEL DE OLIVEIRA SILVESTRE*/
@@ -566,17 +555,14 @@ div SituacaoLinha tem cor cinza*/
 
 .linha_direita .face:hover {
   color:#3b5998;
-  transition: 1s;
 }
 
 .linha_direita .bird:hover {
   color:#00aced;
-  transition: 1s;
 }
 
 .linha_direita .yout:hover {
   color:#ee332c;
-  transition: 1s;
 }
 
 .linha_direita .insta:hover {
@@ -585,11 +571,20 @@ div SituacaoLinha tem cor cinza*/
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 1s;
 }
 
 /*transição da situação da linha - YASMIN PERESTRELO DA SILVA*/
 
 .SituacaoLinha p a:hover {
   border-bottom: 2px rgb(80, 80, 80) solid;
+}
+
+/*hover nos links do menu - YASMIN PERESTRELO DA SILVA*/
+.linha_esquerda a:hover {
+  border-radius: 4px 4px;
+  background-color: #444359;
+  width: 10%;
+  height: 10%;
+  color: whitesmoke;
+  transition: 0.7s;
 }
