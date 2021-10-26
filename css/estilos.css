@@ -26,8 +26,9 @@
 
 /*Para formar a estilização do cabeçalho, a linha de baixo e o espaço*/
 header{
-padding: 22px 0;
+padding: 18px 0;
 border-bottom: 2px solid #DBDBDB;
+background-color:#ededed;
 }
 
 /* Fazer com que eles fiqeum um do lado do outro*/
@@ -53,8 +54,6 @@ color: black;
 
 /*Controle do input de pesquisa*/
 header .pesquisar{
-width: 150%;
-margin-left: -20%;
 color: #4D4D4D;
 border-radius: 5px;
 }
@@ -259,7 +258,37 @@ div SituacaoLinha tem cor cinza*/
 /*FIM DO CSS DO PROJETO "DIRETO DO METRÔ"*/
 
 /* NICOLE RODRIGUES DE OLIVEIRA BARBOSA */
-  /*carrossel de noticias*/
+/* hover no navbar */
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #navbar ul {
+    background-color:#EDEDED;
+    list-style: none;
+    font: 100% Tahoma;
+    height: 100%;
+  }
+
+  #navbar ul li { display: inline; }
+
+  #navbar ul li a {
+    background-color:#EDEDED;
+    color: #333;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-decoration: none;
+    border-bottom: 3px solid #EDEDED;
+  }
+
+  #navbar ul li a:hover {
+    background-color:#D6D6D6;
+    color: #6D6D6D;
+    border-bottom: 3px solid #105ff3;
+  }
+
+/*carrossel de noticias*/
   .galeria {
     grid-template-columns: repeat(15, 30vw);
     grid-template-rows: 1fr;
@@ -382,67 +411,67 @@ div SituacaoLinha tem cor cinza*/
 }
 
 /* navegação inferior */
-.carousel-navigation-list, .carousel-navigation-item {
-  display: inline-block;
-}
+  .carousel-navigation-list, .carousel-navigation-item {
+    display: inline-block;
+  }
 
-.carousel-navigation-list {
-  background-color: transparent;
-  margin-left: 40%;
-  width: 50%;
-}
+  .carousel-navigation-list {
+    background-color: transparent;
+    margin-left: 40%;
+    width: 50%;
+  }
 
-.navigation-button {
-  position: relative;
-  display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-color: #285083;
-  background-clip: content-box;
-  border: 0.25rem solid transparent;
-  border-radius: 50%;
-  transition: transform 0.1s;
-}
+  .navigation-button {
+    position: relative;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #285083;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    transition: transform 0.1s;
+  }
 
 /* navegação lateral */
-.carousel::before, .carousel::after, .slideprev, .slidenext {
-  position: absolute;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  top: 0;
-  margin-top: 30%;
-  transform: translateY(-50%);
-  font-size: 0;
-  outline: 0;
-}
+  .carousel::before, .carousel::after, .slideprev, .slidenext {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    top: 0;
+    margin-top: 30%;
+    transform: translateY(-50%);
+    font-size: 0;
+    outline: 0;
+  }
 
-.carousel::before, .slideprev {
-  left: 2rem;
-  margin-top: -25%;
-}
+  .carousel::before, .slideprev {
+    left: 2rem;
+    margin-top: -25%;
+  }
 
-.carousel::after, .slidenext {
-  right: 2rem;
-  margin-top: -25%;
-}
+  .carousel::after, .slidenext {
+    right: 2rem;
+    margin-top: -25%;
+  }
 
-.carousel::before, .carousel::after {
-  content: '';
-  background-color: #284f8375;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center center;
-  pointer-events: none;
-}
+  .carousel::before, .carousel::after {
+    content: '';
+    background-color: #284f8375;
+    background-size: 1.5rem 1.5rem;
+    background-repeat: no-repeat;
+    background-position: center center;
+    pointer-events: none;
+  }
 
-.carousel::before {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
-}
+  .carousel::before {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
 
-.carousel::after {
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-}
+  .carousel::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+  }
 
 /*PARA ONDE VOCÊ VAI? -> FEITO POR YASMIN PERESTRELO DA SILVA*/
 .secao2 {
@@ -588,3 +617,4 @@ div SituacaoLinha tem cor cinza*/
   color: whitesmoke;
   transition: 0.7s;
 }
+    
