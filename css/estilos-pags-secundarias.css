@@ -11,8 +11,9 @@
 
   /*MAIN PRINCIPAL FEITO POR YASMIN PERESTRELO DA SILVA*/
 
-  .titulo-empresa {
+  .titulo-main {
     background-color: rgb(40, 80, 131);
+    height: 39px;
     position: relative;
     animation: mover 5s;
     animation-direction: reverse;
@@ -21,9 +22,10 @@
 }
 
 
-  .titulo-empresa h1 {
+  .titulo-main h1 {
       color: whitesmoke;
       margin-left: 5%;
+      padding-top: 0.5%;
   }
   
 
@@ -33,3 +35,34 @@
     from {left: 0px;}
     to {left: 50%;}
   }
+
+  /*Notícias css - Feito por Yasmin Perestrelo da Silva*/
+
+  img[src*="My Christmas Subway"] {
+    width: 600px;
+    height: 350px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  .buscar-noticia {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    color: rgb(40, 80, 131);
+  }
+
+  section + section div{
+    margin-left: 24%;
+    margin-right: 5%;
+    color: #404040;
+    background-color: #f1f1f1;
+    padding: 2%;
+  }
+
+  section + section div input {
+    margin-top: 1%;
+  }
+
+  
+
+  /*Final Notícias css*/
